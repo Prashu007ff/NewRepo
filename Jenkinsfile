@@ -7,7 +7,7 @@ pipeline {
     stages{
         stage('checkout'){
             steps{
-                git 'https://github.com/Prashu007ff/NewRepo.git'
+                git branch: 'main' url:'https://github.com/Prashu007ff/NewRepo.git'
             }
         }
         stage('compile'){
